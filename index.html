@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dice Game</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
+    integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="top-buttons">
+    <button class="btn-rules">Rules</button>
+    <button class="btn-new">New game</button>
+  </div>
+
+  <div class="grid-container">
+    <div class="player-0-panel active">
+      <div class="player-name" id="name-0">Player 1</div>
+      <div class="player-score" id="score-0">0</div>
+      <div class="player-controls">
+        <button class="btn-roll"><i class="fas fa-dice"></i>Roll dice</button><br />
+        <button class="btn-hold"><i class="fas fa-hand-holding"></i>Hold</button>
+      </div>
+      <div class="player-current-box">
+        <div class="player-current-label">Current</div>
+        <div class="player-current-score" id="current-0">0</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="dice" id="dice1">
+    <div class="cube animation-1" id="cube1">
+      <div class="cube_face_1">
+        <!-- &bull; -->
+        <img src='images/tiger.png' width="108px" />
+      </div>
+      <div class="cube_face_2">
+        <img src='images/crab.png' width="90px" />
+      </div>
+      <div class="cube_face_3">
+        <img src='images/fish.png' width="90px" />
+      </div>
+      <div class="cube_face_4">
+        <img src='images/gourd.jpg' width="90px" />
+      </div>
+      <div class="cube_face_5">
+        <img src='images/lobster.png' width="90px" />
+      </div>
+      <div class="cube_face_6">
+        <img src='images/roaster.png' width="90px" />
+      </div>
+    </div>
+  </div>
+
+  <div class="dice" id="dice2">
+    <div class="cube animation-1" id="cube2">
+      <div class="cube_face_1">
+        <!-- &bull; -->
+        <img src='images/tiger.png' width="108px" />
+      </div>
+      <div class="cube_face_2">
+        <img src='images/crab.png' width="90px" />
+      </div>
+      <div class="cube_face_3">
+        <img src='images/fish.png' width="90px" />
+      </div>
+      <div class="cube_face_4">
+        <img src='images/gourd.jpg' width="90px" />
+      </div>
+      <div class="cube_face_5">
+        <img src='images/lobster.png' width="90px" />
+      </div>
+      <div class="cube_face_6">
+        <img src='images/roaster.png' width="90px" />
+      </div>
+    </div>
+  </div>
+
+  <div class="dice" id="dice3">
+    <div class="cube animation-1" id="cube3">
+      <div class="cube_face_1">
+        <!-- &bull; -->
+        <img src='images/tiger.png' width="108px" />
+      </div>
+      <div class="cube_face_2">
+        <img src='images/crab.png' width="90px" />
+      </div>
+      <div class="cube_face_3">
+        <img src='images/fish.png' width="90px" />
+      </div>
+      <div class="cube_face_4">
+        <img src='images/gourd.jpg' width="90px" />
+      </div>
+      <div class="cube_face_5">
+        <img src='images/lobster.png' width="90px" />
+      </div>
+      <div class="cube_face_6">
+        <img src='images/roaster.png' width="90px" />
+      </div>
+    </div>
+  </div>
+
+  
+
+  <div class="board">
+    <p>
+      ចំនួនលុយ <span id="amount-money"></span>
+    </p>
+
+    <div>
+      <input type="button" id="tiger-button" value="ខា្ល" />
+      <span id='tigerBetSpan'></span>
+    </div>
+
+    <div>
+      <input type="button" id="crab-button" value="ក្ដាម" />
+      <span id='crabBetSpan'></span>
+    </div>
+
+    <div>
+      <input type="button" id="fish-button" value="ត្រី" />
+      <span id='fishBetSpan'></span>
+    </div>
+
+    <div>
+      <input type="button" id="gourd-button" value="ឃ្លោក" />
+      <span id='gourdBetSpan'></span>
+    </div>
+
+    <div>
+      <input type="button" id="lobster-button" value="បង្កង" />
+      <span id='lobsterBetSpan'></span>
+    </div>
+
+    <div>
+      <input type="button" id="roaster-button" value="មាន់" />
+      <span id='roasterBetSpan'></span>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
